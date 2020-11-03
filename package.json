@@ -1,6 +1,6 @@
 {
-  "name": "@maxflex/v-number",
-  "version": "1.0.10",
+  "name": "vue-animation-counter",
+  "version": "1.0.11",
   "keywords": [
     "vue",
     "vuejs",
@@ -14,9 +14,9 @@
     "vue-likes-counter",
     "like-animation"
   ],
-  "author": "Max Kolyadin",
+  "author": "Max Kolyadin Oyen",
   "license": "MIT",
-  "homepage": "https://maxflex.github.io/v-number/",
+  "homepage": "https://maxflex.github.io/v-number",
   "description": "Animated number transition library for Vue.js",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -69,5 +69,6 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "repository": "git@gitee.com:jjhoc/vue-animation-counter.git"
 }

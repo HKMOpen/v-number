@@ -2,7 +2,7 @@
   <div class="app">
     <div>
       <div class="header">
-        <img class="header__logo" src="img/logo.png" />
+        <img class="header__logo" src="../img/images-4.jpg" />
         <h1 class="header__title">Number</h1>
       </div>
       <h2 style="text-align: center">
@@ -15,11 +15,11 @@
       <div class="likes-counter-example">
         <div class="likes-counter-example__likes">
           <i class="material-icons">favorite</i>
-          <v-number v-model="likes"></v-number>
+          <v-number v-model="likes"></v-number> |
+          <v-number v-model="likes" speed="200"></v-number>
           <span> people liked </span>
         </div>
         <div class="likes-counter-example__button" @click="like()">
-          <i class="material-icons">thumb_up</i>
           <span>Like</span>
         </div>
       </div>
@@ -32,15 +32,6 @@
       <!-- <input style='margin-top: 15px' type='number' v-model='number' @focus='clearInterval' /> -->
     </div>
     <div style="flex: 1"></div>
-    <div>
-      <iframe
-        src="https://ghbtns.com/github-btn.html?user=maxflex&repo=v-number&type=star&count=true&size=large"
-        frameborder="0"
-        scrolling="0"
-        width="160px"
-        height="30px"
-      ></iframe>
-    </div>
   </div>
 </template>
 
@@ -56,7 +47,7 @@ export default {
     return {
       number: 1,
       likes: 153,
-      isLiked: false,
+      isLiked: true,
       intervalSpeed: 2000,
       interval: null
     };
@@ -126,7 +117,7 @@ code {
 
 .v-number-example {
   font-size: 100px;
-  color: PaleVioletRed;
+  color: #fcdae4;
 }
 
 .app {
@@ -158,11 +149,11 @@ input {
     align-items: center;
     & .material-icons {
       margin-right: 3px;
-      color: palevioletred;
+      color: #ac0d3c;
     }
     & .v-number {
       margin-right: 3px;
-      color: palevioletred;
+      color: #660423;
       font-weight: bold;
     }
   }

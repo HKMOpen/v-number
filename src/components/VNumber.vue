@@ -1,24 +1,24 @@
 <template>
   <div class='v-number'>
     <transition name='v-number-current-value'>
-      <div 
-        v-if='currentValue !== null'
-        :style='transitionDuration'
-        class='v-number__animated v-number__current-value' 
+      <div
+          v-if='currentValue !== null'
+          :style='transitionDuration'
+          class='v-number__animated v-number__current-value'
       >
         {{ currentValue }}
       </div>
     </transition>
     <transition name='v-number-new-value'>
-      <div 
-        v-if='newValue !== null'
-        :style='transitionDuration'
-        class='v-number__animated v-number__new-value' 
+      <div
+          v-if='newValue !== null'
+          :style='transitionDuration'
+          class='v-number__animated v-number__new-value'
       >
         {{ newValue }}
       </div>
     </transition>
-    
+
     <!-- Always display the value to keep DIV dimensions up to date -->
     <span class='v-number__original-value'>
       {{ value }}
@@ -37,7 +37,11 @@ export default {
         return !isNaN(value)
       }
     },
-
+    behavior: {
+      required: false,
+      default: "classic",
+      type: String
+    },
     // Animation speed
     speed: {
       type: Number,
@@ -70,7 +74,7 @@ export default {
       isAnimating: false,
     }
   },
-  
+
   created() {
     this.currentValue = this.value
   },
@@ -84,13 +88,12 @@ export default {
   }
 }
 </script>
-
 <style lang='scss' scoped>
 .v-number {
   overflow: hidden;
   position: relative;
   display: inline-block;
-  
+
   &__current-value {
     position: absolute;
   }
