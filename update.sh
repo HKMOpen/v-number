@@ -58,9 +58,10 @@ npmdeploy(){
 gitpush(){
     local gitcheck=$(git diff --shortstat)
     git add .
-    #git remote add origin https://gitee.com/jjhoc/vue-tronlink.git
+    #git remote add gitee https://gitee.com/jjhoc/vue-animation-counter.git
     git commit -m "Please check! $gitcheck"
-    git push
+    git push origin
+    git push gitee
     echo "♻️ You can open ${GIT_LOC} or git clone ${GIT_LOC}.git to copy to the local"
 }
 
