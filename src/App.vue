@@ -54,7 +54,7 @@ export default {
   data() {
     return {
       number: 1,
-      likes: 153,
+      likes: 412153,
       isLiked: true,
       intervalSpeed: 2000,
       interval: null,
