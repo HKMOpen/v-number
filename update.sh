@@ -83,6 +83,7 @@ mod_package_json ".author" "Max Kolyadin Oyen"
 mod_package_json ".repository" "git@gitee.com:jjhoc/vue-animation-counter.git"
 mod_package_json ".homepage" "https://maxflex.github.io/v-number"
 echo "==== done ====="
+cnpm run build
 gitpush
 npmdeploy
 taobao
