@@ -1,3 +1,8 @@
-export {default as VNumber} from './components/VNumber'
-export {default as Vumberx} from './components/Vumberx'
+import VNumber from "@/components/VNumber";
+import Vumberx from "@/components/Vumberx";
 
+
+export default {
+    VNumber,
+    Vumberx
+}
